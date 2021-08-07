@@ -43,5 +43,5 @@ Golem (Humonculus and created life form, made from material combinason)
 
 
 ##### card value:
-between 0 to 100 FIX (never a card shall exist that is stronger then these value) to avoid power creep.
+between 0 to 60 FIX (never a card shall exist that have defaault value higher then these value) to avoid power creep.
 
