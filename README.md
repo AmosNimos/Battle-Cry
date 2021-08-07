@@ -1,6 +1,7 @@
 # Bettle-Cry
 
 Battle-Cry is a free open source tcg card game inspired by mtg, pokemon and yu-gi-oh. all the rules and art are open source. for free fun and game.
+I higly recommend you use open softwair for making art for this project, may i suggest gimp and inkscape.
 
 ## Goals
 - Easy to Learn.
