@@ -1,4 +1,5 @@
 # Bettle-Cry
+> The name is not set in stone yet.
 
 Battle-Cry is a free open source tcg card game inspired by mtg, pokemon and yu-gi-oh. all the rules and art are open source. for free fun and game.
 I higly recommend you use open softwair for making art for this project, may i suggest gimp and inkscape.
@@ -17,6 +18,8 @@ I higly recommend you use open softwair for making art for this project, may i s
 - Each player make a new deck from their portion of the card lot before each game.
  -Each player swap deck after each match.
 
+> if mana should be used for the monster cost, i suggest their should be a single type of it.
+
 ### Card Design
 # the basic template:
 - Name of the card
@@ -26,6 +29,16 @@ I higly recommend you use open softwair for making art for this project, may i s
 - effect
 - values
 
+> The therminology is still open to change. send your suggestion in the github discussion.
+#### Creature/Monster/Demon card
+monster all have effect
+flavore text is separate from the card and can be found online instead. (NO WASTED SPACE)
+
+They have Attack point and Life point.
+the attack is the damage they do
+life is the amounth of total damage they can't take befor dying does not automatically regenerate after battle except if specified otherwise by a card
+
+
 #### Game theme and concept
 This is a serius looking game with dark artstyle. 
 The card color it self is black.
@@ -33,7 +46,6 @@ the concept of the game is that each card is the page out of a Mage book
 and every card is an arcane invocation.
 
 ##### type of invocation:
-
 Neither (Invoque dead Spirit, gosth and spectre)
 Hell (invoke demon)
 Crypt (Invoque dead creature)
@@ -43,5 +55,9 @@ Golem (Humonculus and created life form, made from material combinason)
 
 
 ##### card value:
+> These value will be change!
+casual 0 to 20
+Fuse 20 to 40
+evo 30 to 60
 between 0 to 60 FIX (never a card shall exist that have defaault value higher then these value) to avoid power creep.
 
