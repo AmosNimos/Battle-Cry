@@ -1,0 +1,35 @@
+
+## Example:
+
+Name: Hunted Spirit
+Cost: 1
+Type: Nether
+Effect: IF(_Destroyed_){ 1*Resurect(Crypt) TO Hand };  
+Power: 1
+Life: 1
+Rarity:*
+
+Name: Demon Minion
+Cost: 2
+Type: Hell
+Effect: IF(_Drawn_){ Enemy -=1 Life }; 
+Power: 2
+Life: 1
+Rarity:**
+
+Name: Undead Zombie
+Cost: 3
+Type: Crypt
+Effect: IF(_Played_){ 2*Resurect(Nether) TO Field }; 
+Power: 1
+Life: 2
+Rarity:**
+
+parallel
+Name: Cthulhu
+Cost: 4
+Type: Void
+Effect: IF(_Attack_){ 1*Draw }; 
+Power: 2
+Life: 2
+Rarity:***
