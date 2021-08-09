@@ -1,4 +1,4 @@
-# Bettle-Cry
+# Battle-Cry
 > The name is not set in stone yet.
 
 Battle-Cry is a free open source tcg card game inspired by mtg, pokemon and yu-gi-oh. all the rules and art are open source. for free fun and game.
