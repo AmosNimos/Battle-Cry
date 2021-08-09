@@ -47,13 +47,13 @@ the concept of the game is that each card is the page out of a Mage book
 and every card is an arcane invocation.
 
 ##### type of invocation:
-Neither (Invoque dead Spirit, gosth and spectre)
+Nether (Invoque dead Spirit, gosth and spectre)
 Hell (invoke demon)
 Crypt (Invoque dead creature)
-parallel (Invoque from another dimention)
-void (Invoque life form from deep space) 
+Void (Invoque life form from deep space) 
 Golem (Humonculus and created life form, made from material combinason)
 
+> maybe: parallel (Invoque from another dimention)
 
 ##### card value:
 > These value will be change!
