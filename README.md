@@ -12,6 +12,7 @@ I higly recommend you use open softwair for making art for this project, may i s
 - Fair & free.
 - Every card is compatible with every deck.
 - No extra deck
+- Only one type of card Creature with effect
 
 ### Ways of making it fair
 - The lot of card is shuffled then splited in x amounth of player.
