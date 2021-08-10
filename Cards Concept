@@ -2,12 +2,29 @@
 > So far i tryed adding IF THEN, and maybe some FOR, syntax, the classic operrator like += and ++ and == might also make sense and give use a lot of option
 > Some card benefit from having other type in the deck while others benefit from having a lot of the same type in the deck, i try to avoid card specific effect to have more combinason of card possible.
 
+### Basic function
+
+Draw 
+"Draw 1 card"
+
+Resurect(arguments)
+" Take a card that corespond to the arguments out from your Graveyard "
+
+TO(destination)
+"Move specified card to destination"
+
+destroy(arguments)
+
+Effect IF(_destroyed(self)_){ Destroy(Attacker) }
+Effect IF(_destroyed(other, Void)_){ Destroy(Attacker) }
+Effect IF(_Played(Oponent, Hell)_){ Summoner Life++ }
+
 ## Example:
 
 Name: Hunted Spirit
 Cost: 1
 Type: Nether
-Effect: IF(_Destroyed_){ 2*Resurect(Crypt) TO Hand };  
+Effect: IF(_Destroyed(self)_){ 2*Resurect(Crypt) | TO(Hand) };  
 Power: 1
 Life: 1
 Rarity:*
@@ -15,7 +32,7 @@ Rarity:*
 Name: Demon Minion
 Cost: 2
 Type: Hell
-Effect: IF(_Drawn(self)_){ Enemy -=1 Life }; 
+Effect: IF(_Drawn(self)_){ Enemy Life-- }; 
 Power: 2
 Life: 1
 Rarity:*
@@ -31,7 +48,7 @@ Rarity:**
 Name: Zombie
 Cost: 1
 Type: Crypt
-Effect: IF(_Fuse(self)_){ Summoner +=1 Life }; 
+Effect: IF(_Fuse(self)_){ Summoner Life++ }; 
 Power: 1
 Life: 1
 Rarity:*
@@ -39,7 +56,7 @@ Rarity:*
 Name: Demon Lord
 Cost: 4
 Type: Hell/EVO
-Effect: IF(_Played(Other, Hell)_){ Self +=1 Power }; 
+Effect: IF(_Played(Other, Hell)_){ Self Power+=2  }; 
 Power: 3
 Life: 2
 Rarity:***
@@ -56,7 +73,7 @@ parallel
 Name: Cthulhu
 Cost: 4
 Type: Void
-Effect: IF(_Attack(self)_){ 1*Draw }; 
+Effect: IF(_Attack(self)_){ Draw }; 
 Power: 2
 Life: 2
 Rarity:***
