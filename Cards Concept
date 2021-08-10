@@ -15,6 +15,9 @@ TO(destination)
 
 destroy(arguments)
 
+HEAL(card)
+"Card get +1 life max original value."
+
 Effect IF(_destroyed(self)_){ Destroy(Attacker) }
 Effect IF(_destroyed(other, Void)_){ Destroy(Attacker) }
 Effect IF(_Played(Oponent, Hell)_){ Summoner Life++ }
@@ -43,6 +46,14 @@ Type: Crypt
 Effect: IF(_Played(self)_){ Resurect(Nether) TO Field }; 
 Power: 1
 Life: 2
+Rarity:**
+
+Name: Totem
+Cost: 2
+Type: Golem
+IF(_DISCARD(SELF)_){ 2*HEAL(GOLEM) }
+Power: 1
+Life: 3
 Rarity:**
 
 Name: Zombie
@@ -77,3 +88,4 @@ Effect: IF(_Attack(self)_){ Draw };
 Power: 2
 Life: 2
 Rarity:***
+
