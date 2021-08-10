@@ -33,7 +33,7 @@ I higly recommend you use open softwair for making art for this project, may i s
 - values
 
 > The therminology is still open to change. send your suggestion in the github discussion.
-#### Creature/Monster/Demon card
+#### Summon card
 monster all have effect
 flavore text is separate from the card and can be found online instead. (NO WASTED SPACE)
 
