@@ -1,3 +1,6 @@
+> I hade the idea to use algorithm similar to code to compress the Effect text as much as possible while still having it making sens, i taught that creating a new logical symtax might be usfull.
+> So far i tryed adding IF THEN, and maybe some FOR, syntax, the classic operrator like += and ++ and == might also make sense and give use a lot of option
+> Some card benefit from having other type in the deck while others benefit from having a lot of the same type in the deck, i try to avoid card specific effect to have more combinason of card possible.
 
 ## Example:
 
@@ -12,7 +15,7 @@ Rarity:*
 Name: Demon Minion
 Cost: 2
 Type: Hell
-Effect: IF(_Drawn_){ Enemy -=1 Life }; 
+Effect: IF(_Drawn(self)_){ Enemy -=1 Life }; 
 Power: 2
 Life: 1
 Rarity:*
@@ -20,7 +23,7 @@ Rarity:*
 Name: Undead Zombie
 Cost: 3
 Type: Crypt
-Effect: IF(_Played_){ Resurect(Nether) TO Field }; 
+Effect: IF(_Played(self)_){ Resurect(Nether) TO Field }; 
 Power: 1
 Life: 2
 Rarity:**
@@ -28,7 +31,7 @@ Rarity:**
 Name: Zombie
 Cost: 1
 Type: Crypt
-Effect: IF(_Fuse_){ Summoner +=1 Life }; 
+Effect: IF(_Fuse(self)_){ Summoner +=1 Life }; 
 Power: 1
 Life: 1
 Rarity:*
@@ -36,7 +39,7 @@ Rarity:*
 Name: Demon Lord
 Cost: 4
 Type: Hell/EVO
-Effect: IF(Hell type is _Played__){ Self +=1 Power }; 
+Effect: IF(_Played(Other, Hell)_){ Self +=1 Power }; 
 Power: 3
 Life: 2
 Rarity:***
@@ -53,7 +56,7 @@ parallel
 Name: Cthulhu
 Cost: 4
 Type: Void
-Effect: IF(_Attack_){ 1*Draw }; 
+Effect: IF(_Attack(self)_){ 1*Draw }; 
 Power: 2
 Life: 2
 Rarity:***
