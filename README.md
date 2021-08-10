@@ -34,16 +34,16 @@ I higly recommend you use open softwair for making art for this project, may i s
 
 > The therminology is still open to change. send your suggestion in the github discussion.
 #### Summon card
-monster all have effect
-flavore text is separate from the card and can be found online instead. (NO WASTED SPACE)
+all have effect,
+flavore text is separate from the card and can be found online instead. (NO WASTED SPACE!)
 
-They have Attack point and Life point.
-the attack is the damage they do
-life is the amounth of total damage they can't take befor dying does not automatically regenerate after battle except if specified otherwise by a card
+summon have Power point and Life point.
 
+The Power is the damage they do.
+The life is the amounth of total damage they can't take befor dying does not automatically regenerate after battle except if specified otherwise by a card.
 
 #### Game theme and concept
-This is a serius looking game with dark artstyle. 
+This is a serius looking game aim at adult, with dark artstyle. 
 The card color it self is black.
 the concept of the game is that each card is the page out of a Mage book
 and every card is an arcane invocation.
