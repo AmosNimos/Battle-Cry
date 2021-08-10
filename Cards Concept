@@ -18,10 +18,10 @@ TO(destination)
 DESTROY(arguments)
 
 BOOST(x)
-"add +1 to x, their is no maximum to boost"
+"Card get +1 power"
 
 HEAL(card)
-"Card get +1 life max original value."
+"Card get +1 life"
 
 Effect IF(_destroyed(self)_){ Destroy(Attacker) }
 Effect IF(_destroyed(other, Void)_){ Destroy(Attacker) }
@@ -60,7 +60,7 @@ Name: Totem
 Cost: 2
 Type: Golem
 IF(_DISCARD(SELF)_){ 2*HEAL(GOLEM) }
-Effect Traditional: At any moment you can discard this card from your hand to activate it's effect, select a golem type monster and heal 2 of his life point. (Heal cannot recover more then the original life point)
+Effect Traditional: At any moment you can discard this card from your hand to activate it's effect, select a golem type monster it get +2 life
 Power: 1
 Life: 3
 Rarity:**
@@ -76,7 +76,8 @@ Rarity:*
 Name: Demon Lord
 Cost: 4
 Type: Hell/EVO
-Effect: IF(_Played(Other, Hell)_){ Self Power+=2  }; 
+Effect: IF(_Played(Other, Hell)_){ 2*BOOST(SELF) }; 
+Effect Traditional: When another Hell type monster enter your side of the field, this monster get +2 power.
 Power: 3
 Life: 2
 Rarity:***
@@ -85,6 +86,7 @@ Name: Undead Amalgame
 Cost: 3
 Type: Crypt/Fuse
 Effect: IF(Turn _end_){ Resurect(Hell, Cost:1) TO Field }; 
+Effect Traditional: When your turn end you can select a Hell type monster with a cost of 1 from your graveyard and place it on the field untap.
 Power: 3
 Life: 3
 Rarity:***
