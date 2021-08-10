@@ -2,18 +2,23 @@
 > So far i tryed adding IF THEN, and maybe some FOR, syntax, the classic operrator like += and ++ and == might also make sense and give use a lot of option
 > Some card benefit from having other type in the deck while others benefit from having a lot of the same type in the deck, i try to avoid card specific effect to have more combinason of card possible.
 
+_Discard_ when you put this card from the field or your hand to the graveyard, you can discard a card with a discard function at any time.
+
 ### Basic function
 
-Draw 
+DRAW
 "Draw 1 card"
 
-Resurect(arguments)
+RESURECT(arguments)
 " Take a card that corespond to the arguments out from your Graveyard "
 
 TO(destination)
 "Move specified card to destination"
 
-destroy(arguments)
+DESTROY(arguments)
+
+BOOST(x)
+"add +1 to x, their is no maximum to boost"
 
 HEAL(card)
 "Card get +1 life max original value."
@@ -27,7 +32,8 @@ Effect IF(_Played(Oponent, Hell)_){ Summoner Life++ }
 Name: Hunted Spirit
 Cost: 1
 Type: Nether
-Effect: IF(_Destroyed(self)_){ 2*Resurect(Crypt) | TO(Hand) };  
+Effect: IF(_Destroyed(self)_){ 2*Resurect(Crypt) TO(Hand) };  
+Effect Traditional: When this card is destroyed, you can select two Crypt type monster card from your graveyard, and place them into your hand.
 Power: 1
 Life: 1
 Rarity:*
@@ -35,7 +41,8 @@ Rarity:*
 Name: Demon Minion
 Cost: 2
 Type: Hell
-Effect: IF(_Drawn(self)_){ Enemy Life-- }; 
+Effect: IF(_Draw(self)_){ Selected(Creature) Life-- }; 
+Effect Traditional: When this card is Drawn from your deck to your hand, Select a creature on the field, then it lose one life.
 Power: 2
 Life: 1
 Rarity:*
@@ -44,6 +51,7 @@ Name: Undead Zombie
 Cost: 3
 Type: Crypt
 Effect: IF(_Played(self)_){ Resurect(Nether) TO Field }; 
+Effect Traditional: When this card enter the field you may select a nether type creature from your graveyard and place it on the field.
 Power: 1
 Life: 2
 Rarity:**
@@ -52,6 +60,7 @@ Name: Totem
 Cost: 2
 Type: Golem
 IF(_DISCARD(SELF)_){ 2*HEAL(GOLEM) }
+Effect Traditional: At any moment you can discard this card from your hand to activate it's effect, select a golem type monster and heal 2 of his life point. (Heal cannot recover more then the original life point)
 Power: 1
 Life: 3
 Rarity:**
