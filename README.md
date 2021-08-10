@@ -58,7 +58,7 @@ Golem (Humonculus and created life form, made from material combinason)
 ##### card value:
 > These value will be change!
 casual 0 to 20
-Fuse 20 to 40 (When x amouth of duplicate are on the field you can discard them and play their fuse summon from  your deck or your hand)
-evo 30 to 60 (Discard a monster of the same type to play a evo with a cost == to the evo cost-1)
+Fuse 20 to 40 (When amouth of duplicate equal to a Fuse cost are on the field you can discard them and play their fuse summon from  your deck or your hand)
+evo 30 to 60 (Discard a monster of the same type to play a evo with a cost == to the evo cost-1, mana still need to be payed.)
 between 0 to 60 FIX (never a card shall exist that have defaault value higher then these value) to avoid power creep.
 
