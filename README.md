@@ -1,4 +1,6 @@
 # Battle-Cry
+
+![zombie](https://cdn.pixabay.com/photo/2021/07/04/18/56/zombie-6387306_1280.png)
 > The name is not set in stone yet.
 
 Battle-Cry is a free open source tcg card game inspired by mtg, pokemon and yu-gi-oh. all the rules and art are open source. for free fun and game.
