@@ -4,7 +4,7 @@
 Name: Hunted Spirit
 Cost: 1
 Type: Nether
-Effect: IF(_Destroyed_){ 1*Resurect(Crypt) TO Hand };  
+Effect: IF(_Destroyed_){ 2*Resurect(Crypt) TO Hand };  
 Power: 1
 Life: 1
 Rarity:*
@@ -15,15 +15,39 @@ Type: Hell
 Effect: IF(_Drawn_){ Enemy -=1 Life }; 
 Power: 2
 Life: 1
-Rarity:**
+Rarity:*
 
 Name: Undead Zombie
 Cost: 3
 Type: Crypt
-Effect: IF(_Played_){ 2*Resurect(Nether) TO Field }; 
+Effect: IF(_Played_){ Resurect(Nether) TO Field }; 
 Power: 1
 Life: 2
 Rarity:**
+
+Name: Zombie
+Cost: 1
+Type: Crypt
+Effect: IF(_Fuse_){ Summoner +=1 Life }; 
+Power: 1
+Life: 1
+Rarity:*
+
+Name: Demon Lord
+Cost: 4
+Type: Hell/EVO
+Effect: IF(Hell type is _Played__){ Self +=1 Power }; 
+Power: 3
+Life: 2
+Rarity:***
+
+Name: Undead Amalgame
+Cost: 3
+Type: Crypt/Fuse
+Effect: IF(Turn _end_){ Resurect(Hell, Cost:1) TO Field }; 
+Power: 3
+Life: 3
+Rarity:***
 
 parallel
 Name: Cthulhu
