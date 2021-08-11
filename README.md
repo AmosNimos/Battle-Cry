@@ -1,7 +1,9 @@
 # Battle-Cry
 
 ![zombie](https://cdn.pixabay.com/photo/2021/07/04/18/56/zombie-6387306_1280.png)
-> The name is not set in stone yet.
+
+> The name is not set in stone yet. (maybe summoners war?)
+> You can collaborate to the project by participating in the discussions [here](https://github.com/AmosNimos/Battle-Cry/discussions) this is a comunity driven project based on your feedback.
 
 Battle-Cry is a free open source tcg card game inspired by mtg, pokemon and yu-gi-oh. all the rules and art are open source. for free fun and game.
 I higly recommend you use open softwair for making art for this project, may i suggest gimp and inkscape.
@@ -9,12 +11,14 @@ I higly recommend you use open softwair for making art for this project, may i s
 ## Goals
 - Easy to Learn.
 - Easy to Play.
+- Quick match
 - Minimal Reading required while playing.
 - Playable on paper & on the terminal.
 - Fair & free.
 - Every card is compatible with every deck.
 - No extra deck
 - Only one type of card Creature with effect
+- Non competitive.
 
 ### Ways of making it fair
 - The lot of card is shuffled then splited in x amounth of player.
